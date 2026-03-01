@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>MedBot — AI Medical Assistant</title>
+    <meta name="description"
+        content="MedBot: Doctor-level AI medical chatbot powered by NLP. Ask about diseases, symptoms, medications, lab values and more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+
+    <!-- ── NAV ─────────────────────────────────────────────── -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-brand">
+                <div class="nav-logo">🩺</div>
+                <span>MedBot</span>
+            </a>
+            <a href="/chat" class="btn-primary">Launch Chat →</a>
+        </div>
+    </nav>
+
+    <!-- ── HERO ──────────────────────────────────────────────── -->
+    <section class="hero">
+        <div class="hero-badge"><span class="dot"></span>AI-Powered · Doctor-Level Knowledge · NLP</div>
+        <h1>Your AI<br /><span class="gradient-text">Medical Assistant</span></h1>
+        <p class="hero-sub">Ask about symptoms, diseases, medications, lab values, first aid, and mental health —
+            powered by a comprehensive medical knowledge base and NLP.</p>
+        <div class="hero-actions">
+            <a href="/chat" class="btn-primary btn-lg">Start Chatting 🩺</a>
+            <a href="#features" class="btn-ghost">See Features ↓</a>
+        </div>
+        <div class="hero-disclaimer">
+            ⚠️ For informational purposes only. Not a substitute for professional medical advice.
+        </div>
+    </section>
+
+    <!-- ── STATS ─────────────────────────────────────────────── -->
+    <section class="stats">
+        <div class="stat-card">
+            <div class="stat-num">40+</div>
+            <div class="stat-label">Medical Topics</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Training Patterns</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">NLP</div>
+            <div class="stat-label">TF-IDF Engine</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-num">0</div>
+            <div class="stat-label">API Keys Needed</div>
+        </div>
+    </section>
+
+    <!-- ── FEATURES ───────────────────────────────────────────── -->
+    <section class="features" id="features">
+        <div class="section-label">What MedBot Knows</div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🦠</div>
+                <div class="feature-title">Diseases & Conditions</div>
+                <div class="feature-desc">Diabetes, hypertension, malaria, TB, COVID-19, dengue, typhoid, pneumonia,
+                    asthma, heart disease, anemia and more — with clinical details.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💊</div>
+                <div class="feature-title">Medications</div>
+                <div class="feature-desc">Drug uses, dosages, side effects, contraindications — paracetamol, metformin,
+                    antibiotics, aspirin, antihypertensives and more.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🩸</div>
+                <div class="feature-title">Lab Values & Vitals</div>
+                <div class="feature-desc">Normal ranges for blood pressure, blood sugar, HbA1c, hemoglobin, cholesterol,
+                    SpO2, heart rate, body temperature, BMI.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚑</div>
+                <div class="feature-title">Emergency & First Aid</div>
+                <div class="feature-desc">CPR steps, Heimlich maneuver, snakebite first aid, burn care, wound care, and
+                    emergency warning signs.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-title">Mental Health</div>
+                <div class="feature-desc">Depression, anxiety, panic attacks — symptoms, DSM-5 criteria, treatment
+                    options, CBT, medications, and self-care tips.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🥗</div>
+                <div class="feature-title">Nutrition & Lifestyle</div>
+                <div class="feature-desc">Vitamins, minerals, dietary patterns (Mediterranean, DASH), exercise
+                    guidelines, and evidence-based wellness advice.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TECH STACK ─────────────────────────────────────────── -->
+    <section class="tech-section">
+        <div class="section-label">Tech Stack</div>
+        <div class="tech-grid">
+            <div class="tech-pill">🐍 Python</div>
+            <div class="tech-pill">🌶️ Flask</div>
+            <div class="tech-pill">📊 scikit-learn</div>
+            <div class="tech-pill">🔤 TF-IDF NLP</div>
+            <div class="tech-pill">📐 Cosine Similarity</div>
+            <div class="tech-pill">💾 joblib</div>
+            <div class="tech-pill">⚡ AJAX / Fetch API</div>
+        </div>
+    </section>
+
+    <!-- ── CTA ────────────────────────────────────────────────── -->
+    <section class="cta-section">
+        <h2>Ready to ask a medical question?</h2>
+        <p>Get detailed, doctor-level answers instantly.</p>
+        <a href="/chat" class="btn-primary btn-lg">Open MedBot Chat 🩺</a>
+    </section>
+
+    <footer>
+        <p>MedBot · Built with Python, Flask & scikit-learn · ⚠️ Educational purposes only · Always consult a licensed
+            physician</p>
+    </footer>
+
+</body>
+
+</html>
