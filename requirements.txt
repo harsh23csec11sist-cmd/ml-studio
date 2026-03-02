@@ -1,5 +1,4 @@
 flask==3.1.0
-scikit-learn==1.6.1
-numpy==1.26.4
-joblib==1.4.2
+groq==0.13.0
 gunicorn==21.2.0
+python-dotenv==1.0.1
